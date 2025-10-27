@@ -3,24 +3,18 @@
   margin: 0;
   box-sizing: border-box;
 }
-body {
-  background-color: rgba(0, 0, 0, 0.34);
-}
 
 .navbar {
   width: 100%;
-  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  top: 0;
-  left: 0;
   padding: 0.2rem 1rem;
   z-index: 1000;
-  background-color: transparent;
+  position: fixed;
 }
 
-.logo {
+.logo h1 {
   width: 200px;
   color: white;
 }
@@ -28,50 +22,68 @@ body {
 .navlinks {
   display: flex;
   list-style: none;
-  gap: 20px;
-  padding-left: 200px;
+  gap: 10px;
+  padding-left: 100px;
 }
 .navlinks li {
   position: relative;
 }
 .navlinks a {
   position: relative;
-  color: whitesmoke;
+  color: white;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 16px;
   font-family: "d-din";
 }
 
 .section1 {
-  height: 100vh;
-  background-image: url(7b1de463-4f7e-4e77-9162-19c02476ccdf.jpeg);
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(abstract-gradient-neon-lights.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
-  overflow: hidden;
+  background-position: center;
 }
 .content1 {
-  padding: 5%;
-
-  padding-top: 200px;
   font-family: "Oswald";
+  padding-left: 4rem;
+  padding-top: 3rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
+.columncontent3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+  padding: 0 5rem;
+}
+
 .content1 h1 {
   color: white;
-  font-size: 40px;
+  font-size: 50px;
 }
 .content1 p {
-  color: #666;
+  color: bisque;
+  font-size: 20px;
+}
+.imagecontent4 {
+  margin-top: 80px;
 }
 button {
-  color: black;
-  font-size: 15px;
+  padding: 15px 30px;
+  font-size: 12px;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 15px;
+  color: rgb(190, 139, 18);
   cursor: pointer;
 }
 
 .section2 {
   height: auto;
-  background-color: black;
+  background-color: rgb(190, 139, 18);
   padding: 0.2rem;
   width: 100%;
 }
@@ -84,8 +96,6 @@ button {
 
 .content2 {
   color: rgba(241, 239, 239, 0.804);
-  padding-right: 20px;
-  padding-left: 20px;
   align-items: center;
   font-size: 12px;
   border-right: 2px solid grey;
@@ -94,37 +104,45 @@ button {
 .gridsection1 {
   padding: 1rem 0;
   height: auto;
-  background-color: white;
+  background-image: url(modern-composition-with-blurred-amusement-park.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .gridheader {
   text-align: center;
   font-size: 1.9rem;
   text-transform: uppercase;
   margin-bottom: 8px;
-  color: rgba(0, 0, 0, 0.365);
+  color: white;
 }
 .gridcontainer2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   padding: 1rem;
-  color: black;
+
+  padding-right: 50px;
+  padding-left: 50px;
 }
 .grid-items {
   padding: 1.5rem;
-  box-shadow: 0 5px 15px white;
-  overflow: hidden;
+
   align-items: center;
+}
+.grid-items h4 {
+  color: white;
 }
 .grid-items p {
   font-size: 20px;
+  color: rgb(190, 139, 18);
 }
 
 .columncontent1 {
-  height: auto;
-  padding: 5rem 2rem;
+  min-height: 100vh;
+
   color: white;
-  background-color: black;
+  background-color: rgb(190, 139, 18);
 }
 
 .container {
@@ -137,72 +155,265 @@ button {
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  top: 60%;
 }
 
-.text-content {
-  font-size: 20px;
-  color: #666;
+.text-content p {
+  font-size: 30px;
+  color: white;
 }
 
 .gridsection2 {
-  height: 20vh;
-  background-color: white;
+  height: auto;
+
+  background-image: url(modern-composition-with-blurred-amusement-park.jpg);
   padding: 0.2rem;
   width: 100%;
 }
 .gridheader1 {
   text-align: center;
   padding-bottom: 20px;
+  margin-top: 40px;
+  color: white;
+  font-size: 30px;
 }
 
 .column1 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
-.grid-text {
+.grid-image {
   display: flex;
   align-items: center;
   padding-right: 20px;
   padding-left: 20px;
-  color: #666;
-}
-.grid-text1 {
-  color: rgb(0, 0, 0);
-}
-.grid-text2 {
-  color: red;
-}
-.grid-text4 {
-  color: blue;
 }
 
 .gridsection3 {
   padding: 1rem 0;
   height: auto;
-  background-color: white;
+
+  background-image: url(modern-composition-with-blurred-amusement-park.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .gridheader2 {
   text-align: center;
   font-size: 30px;
-  margin-top: 40px;
-  color: black;
+  margin-top: 220px;
+  color: white;
 }
 .gridcontainer4 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  padding: 3rem;
   color: black;
+  padding-left: 90px;
 }
 .grid-items1 {
   padding: 2rem;
-  overflow: hidden;
+
   align-items: center;
 }
 .grid-items1 h4 {
-  color: #2c3e50;
+  color: rgb(190, 139, 18);
 }
 .grid-items1 p {
-  font-size: 10px;
+  font-size: 15px;
+  color: white;
+}
+
+@media (min-width: 1440px) {
+  .content1 {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .container1 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .column1 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .gridcontainer4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .container1 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .column1 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .gridcontainer4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 768px) and (max-width: 1023) {
+  .navbar {
+    padding: 1rem;
+  }
+  .navlinks {
+    gap: 15px;
+  }
+  .navlinks a {
+    font-size: 14px;
+  }
+  .columncontent3 {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+  .imagecontent4 img {
+    max-width: 80%;
+  }
+  .container1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .columncontent2 {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+  .imagecontent1 img {
+    max-width: 80%;
+  }
+  .column1 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .gridcontainer4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .columncontent3 {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 568px) and (max-width: 767px) {
+  .navbar {
+    padding: 0.8rem 1rem;
+  }
+  .logo {
+    font-size: 20px;
+  }
+  .navlinks {
+    gap: 20px;
+  }
+  .navlinks a {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+  .columncontent2 {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .content1 h1 {
+    font-size: 26px;
+  }
+  .content1 p {
+    font-size: 12px;
+  }
+  .imagecontent4 img {
+    max-width: 70%;
+  }
+  .container1 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .columncontent2 {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .columncontent3 {
+    grid-template-columns: 1fr;
+  }
+  .imagecontent1 img {
+    max-width: 70%;
+  }
+  .column1 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .gridcontainer4 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 567px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .logo {
+    font-size: 18px;
+  }
+  .navlinks {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .navlinks a {
+    font-size: 11px;
+  }
+
+  .section1 {
+    padding-top: 120px;
+  }
+  .container1 {
+    padding: 1rem 3rem;
+  }
+  .columncontent2 {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .columncontent2 img {
+    max-width: 100%;
+    height: auto;
+  }
+  .content1 h1 {
+    font-size: 4rem;
+  }
+  .content1 p {
+    font-size: 2rem;
+  }
+  .content1 button {
+  }
+  .content1 {
+    text-align: center;
+    padding-right: 60px;
+  }
+  .columncontent3 {
+    grid-template-columns: 1fr;
+    padding: 3rem 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .columncontent3 img {
+    max-width: 100%;
+  }
+  .column1 {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .gridcontainer2 {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .gridcontainer4 {
+    grid-template-columns: 1fr;
+  }
 }
